@@ -12,11 +12,16 @@ h2 {
     text-align: center;
     font-size: 28pt;
 }
+h3 {
+    font-size: 16pt;
+    margin: 5pt 0;
+}
 
 #profile {
     width: 80%;
     margin: auto;
     display: flex;
+    align-items: center;
 }
 #headshot {
     width: 30%;
@@ -48,20 +53,44 @@ h2 {
     margin: auto;
 }
 .project {
+    margin: 20px 0;
     border: 1px solid black;
     border-radius: 30px;
     box-shadow: 0 0 10px #444;
+    height: 100px;
+    width: 100%;
+    display: flex;
+}
+.project img {
+    float: left;
+    max-height: 70%;
+    max-width: 25%;
+    border-radius: 10px;
+    align-self: center;
+    margin: 5px 10px;
+}
+.project a {
+    text-decoration: none;
+    color: #666;
+}
+.project a:hover {
+    color: #000;
+}
+.project p {
+    margin: 2px 0;
 }
 
 @media(orientation: portrait) {
     #profile {
         flex-direction: column;
-        align-items: center;
     }
     #headshot {
         width: 80%;
     }
     #summary {
         width: 90%;
+    }
+    .project {
+        height: 150px;
     }
 }
