@@ -57,14 +57,14 @@ h3 {
     border: 1px solid black;
     border-radius: 30px;
     box-shadow: 0 0 10px #444;
-    height: 100px;
+    min-height: 100px;
     width: 100%;
     display: flex;
 }
 .project img {
     float: left;
-    max-height: 70%;
-    max-width: 25%;
+    max-width: 15%;
+    aspect-ratio: 16 / 9;
     border-radius: 10px;
     align-self: center;
     margin: 5px 10px;
@@ -91,6 +91,9 @@ h3 {
         width: 90%;
     }
     .project {
-        height: 150px;
+        min-height: 150px;
+    }
+    .project img {
+        max-width: 30%;
     }
 }
