@@ -1,3 +1,3 @@
 # q-horton.github.io
 
-GitHub pages profile
+This is my GitHub pages website. It serves as a personal portfolio.
